@@ -9,7 +9,7 @@ sidebar:
 import { Render } from "~/components";
 
 <Render
-	file="casb/integration-description"
+	file="casb/integration-description 
 	product="cloudflare-one"
 	params={{
 		integrationName: "Amazon Web Services (AWS) S3",
@@ -135,18 +135,6 @@ Identify AWS IAM-related security issues that could affect S3 Bucket and Object 
 | IAM User Password Older Than 90 Days                            | `c5376384-e4e4-4b2c-af84-12d6740939f0` | Medium   |
 | IAM Account Password Policy Doesn't Require Numbers             | `15c65813-c7e6-4b22-95b3-b3942c8b8924` | Low      |
 
-### Root User Management
-
-Detect security issues related to the use of an IAM Root User, which has the ability to access and configure important settings.
-
-| Finding type                                      | FindingTypeID                          | Severity |
-| ------------------------------------------------- | -------------------------------------- | -------- |
-| AWS Root User Access Key Used within Last 90 Days | `9d23c002-aece-42b5-b082-2b51fab8d7c1` | Critical |
-| AWS Root User has Access Keys                     | `1b788d31-ed56-4008-b136-6993f38e4d1c` | Critical |
-| AWS Root User Logged in within Last 90 Days       | `e9959d6e-edc9-4ea3-9113-3c30b02a811e` | Critical |
-| AWS Root User MFA Disabled                        | `19abe0ee-e8bd-4e3b-9ee9-ea5c64fe769c` | Critical |
-
-### Certificates
 
 Catch certificate-related issues and risks to prevent malicious compromise of internal resources.
 
